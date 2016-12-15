@@ -8,9 +8,13 @@
         "http-proxy": "^1.8.1",
         "cf-deployment-tracker-client": "*"
     },
-    "main": "server.js",
+    "devDependencies": {
+        "jasmine-core": "^2.4.1",
+        "jasmine-node": "^1.14.5"
+    },
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "test": "jasmine-node sut.spec.js"
     },
     "repository": {
         "type": "git",
